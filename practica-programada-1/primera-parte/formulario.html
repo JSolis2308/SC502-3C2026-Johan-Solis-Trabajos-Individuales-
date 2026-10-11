@@ -1,3 +1,5 @@
+<!--Practica Programada 1. Parte 1. Elaborado Johan Solis Soto-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,24 +19,24 @@
     <form action="https://register-demo.freecodecamp.org" method="post">
 
         <fieldset>
-            <label for="nombre">Ingrese su nombre: <input id="nombre" type="text" required></label>
-            <label for="apellido">Ingrese su apellido: <input id="apellido" type="text" required></label>
-            <label for="correo">Ingrese su correo electrónico: <input id="correo" type="email" required></label>
-            <label for="clave">Crea una nueva contraseña: <input id="contraseña" type="password" pattern="[a-z0-5]{8,}" required></label>
+            <label for="nombre">Ingrese su nombre: <input id="nombre" type="text" required name="first-name"></label>
+            <label for="apellido">Ingrese su apellido: <input id="apellido" type="text" required name="last-name"></label>
+            <label for="correo">Ingrese su correo electrónico: <input id="correo" type="email" required name="email"></label>
+            <label for="clave">Crea una nueva contraseña: <input id="contraseña" type="password" pattern="[a-z0-5]{8,}" required name="password"></label>
         </fieldset>
 
-        <fieldset>
+        <fieldset>   
             <legend>Tipo de cuenta (Requerido)</legend>
-            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Personal</label>
-            <label for="business-account"><input id="business-account" type="radio" name="account-type"> Business </label>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked class="inline"> Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"> Business </label>
         </fieldset>
             
         <fieldset>
-            <label for="profile-picture"> Cargue una foto de perfil: <input type="file" id="profile-picture"> </label>
-            <label for="age"> Ingrese su edad (años): <input type="number" min="13" max="120" id="age"></label>
+            <label for="profile-picture"> Cargue una foto de perfil: <input type="file" id="profile-picture" name="profile-picture"> </label>
+            <label for="age"> Ingrese su edad (años): <input type="number" min="13" max="120" id="age" name="age"></label>
 
             <label for="referrer"> Como escucho de nosotros? 
-                <select name="" id="referrer">
+                <select name="referrer" id="referrer">
                 <option value="">(Seleccione una opcion)</option>
                 <option value="1">freeCodeCamp News</option>
                 <option value="2">freeCodeCamp YouTube Channel</option>
@@ -43,20 +45,15 @@
                 </select>
             </label>
 
-            <label for="bio"> Brinde una descripcion: <textarea id="bio" rows="3" cols="30"></textarea></label>
+            <label for="bio"> Brinde una descripcion: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea></label>
 
         </fieldset>
 
-        <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required>Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
+        <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline">Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
       
         <input type="submit" value="Enviar">
 
-        
-
-
     </form>
-
-    
 
 </body>
 </html>
