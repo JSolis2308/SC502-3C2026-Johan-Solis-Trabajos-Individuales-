@@ -30,18 +30,20 @@
         </fieldset>
             
         <fieldset>
-            <label for=""> Cargue una foto de perfil: <input type="file"> </label>
-            <label for=""> Ingrese su edad (años): <input type="number" min="13" max="120"></label>
+            <label for="profile-picture"> Cargue una foto de perfil: <input type="file" id="profile-picture"> </label>
+            <label for="age"> Ingrese su edad (años): <input type="number" min="13" max="120" id="age"></label>
 
-            <label for="">Como escucho de nosotros? 
-                <select name="" id="">
+            <label for="referrer"> Como escucho de nosotros? 
+                <select name="" id="referrer">
                 <option value="">(Seleccione una opcion)</option>
                 <option value="1">freeCodeCamp News</option>
                 <option value="2">freeCodeCamp YouTube Channel</option>
                 <option value="3">freeCodeCamp Forum</option>
-                <option value="4">Other</option>
+                <option value="4">Otro</option>
                 </select>
             </label>
+
+            <label for="bio"> Brinde una descripcion: <textarea id="bio" rows="3" cols="30"></textarea></label>
 
         </fieldset>
 
