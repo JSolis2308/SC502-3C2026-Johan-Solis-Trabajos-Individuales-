@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+
+    <link rel="stylesheet" href="C:\Users\50684\Documents\GitHub\SC502-3C2026-Johan-Solis-Trabajos-Individuales-\practica-programada-1\assets\css\styles.css">
+ 
+</head>
+<body>
+    
+    <h1>Formulario de Registro</h1>
+
+    <p>Por favor, complete este formulario con la información requerida.</p>
+
+    <form action="https://register-demo.freecodecamp.org" method="post">
+
+        <fieldset>
+            <label for="nombre">Ingrese su nombre: <input id="nombre" type="text" required></label>
+            <label for="apellido">Ingrese su apellido: <input id="apellido" type="text" required></label>
+            <label for="correo">Ingrese su correo electrónico: <input id="correo" type="email" required></label>
+            <label for="clave">Crea una nueva contraseña: <input id="contraseña" type="password" pattern="[a-z0-5]{8,}" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de cuenta (Requerido)</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"> Business </label>
+        </fieldset>
+            
+        <fieldset>
+            <label for=""> Cargue una foto de perfil: <input type="file"> </label>
+            <label for=""> Ingrese su edad (años): <input type="number" min="13" max="120"></label>
+
+            <label for="">Como escucho de nosotros? 
+                <select name="" id="">
+                <option value="">(Seleccione una opcion)</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp YouTube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
+                </select>
+            </label>
+
+        </fieldset>
+
+        <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required>Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
+      
+        <input type="submit" value="Enviar">
+
+        
+
+
+    </form>
+
+    
+
+</body>
+</html>
+
+
