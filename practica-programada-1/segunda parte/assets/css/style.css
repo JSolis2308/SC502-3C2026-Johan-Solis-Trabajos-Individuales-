@@ -1,0 +1,13 @@
+body {
+    background-color: #b8ede5;
+}
+
+.menu {
+    background-color: rgb(10, 0, 55);
+    height:60px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
